@@ -213,27 +213,6 @@ transition:.3s;
 transform:scale(1.05);
 }
 
-.project{
-position:absolute;
-overflow:hidden;
-}
-
-.project-info{
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-padding:20px;
-
-background:linear-gradient(transparent, rgba(0,0,0,.8));
-
-opacity:0;
-transition:.4s;
-}
-
-.project:hover .project-info{
-opacity:1;
-}
 /* CONTATO */
 form{
 display:flex;
@@ -363,18 +342,11 @@ filter:brightness(.6);
 
 /* CAIXA DE INFORMAÇÃO */
 .project-info{
-
 max-height:0;
 overflow:hidden;
-
 opacity:0;
-transform:translateY(-10px);
-
-transition:
-max-height .5s ease,
-opacity .4s ease,
-transform .4s ease;
-
+transform:translateY(-20px);
+transition:0.4s ease;
 background:#111;
 margin-top:15px;
 padding:0 20px;
@@ -385,13 +357,10 @@ max-width:450px;
 
 /* QUANDO O PROJETO ESTIVER NO CENTRO */
 .project.active .project-info{
-
 max-height:150px;
 opacity:1;
 transform:translateY(0);
-
 padding:15px 20px;
-
 }
 
 
